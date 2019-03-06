@@ -1,0 +1,136 @@
+html,
+body {
+  height: 100%;
+}
+
+nav {
+  height: 45px;
+}
+
+body {
+  font-family: "Cardo", "Times New Roman", Times, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #212529;
+  background-color: #FFF;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+section {
+  padding: 100px 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3,
+li {
+  font-style: italic;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #FFF;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  background-color: #111;
+  min-height: 600px;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.home h1, .home h2, .home h3, .home p {
+  color: #FFF;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.home p {
+  font-size: 1.35rem;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.contact-form {
+  margin-bottom: 40px;
+}
+
+p.social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p.social a:hover {
+  color: #595959;
+}
+
+p.social a {
+  margin: 0 10px 0 0;
+  color: #FFF;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+  line-height: 38px;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s;
+  vertical-align: bottom;
+}
+
+p.social a i {
+  vertical-align: bottom;
+  line-height: 38px;
+  font-size: 21px;
+}
+
+p.social a.linkedin,
+p.social a.github,
+p.social a.email {
+  background-color: #AAA;
+}
+
+#portfolio {
+  background: #F7F7F7;
+}
+
+#home p {
+  font-style: italic;
+}
