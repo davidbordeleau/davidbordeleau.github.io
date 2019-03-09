@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css" id="theme-stylesheet">
     <link rel="stylesheet" href="css/footer.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/card.css" id="theme-stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky">
@@ -29,7 +30,7 @@
             <div class="col-lg-8 col-md-12 mx-auto">
               <p>Hi, my name is David.</p>
               <h1>I am a Full Stack Web Developer, </h1>
-              <p>Ruby on Rails specialist.</p>
+              <p>Working with Ruby on Rails.</p>
             </div>
             <div class="col-lg-4 col-md-12 mx-auto">
               <p class="social">
@@ -49,7 +50,7 @@
             <h2 class="heading">About me</h2>
             <p>I'm a Web-Developer with a master's degree in music performance.</p>
             <p>In music like in web-development the key is to be curious & patient. On my journey to web-development I quickly picked up complicated concepts like functions, class and arrays, which every good developer needs to understand before they can commit quality code to the world of agile development.</p>
-            <p>I worked on several <a href="#portfolio"><strong>projects</strong></a> containing two sided market apps. To solidify my knowledge I attended "Le Wagon" bootcamp in 2019.</p>
+            <p>I worked on several <a href="#portfolio"><strong>projects</strong></a> and attended "Le Wagon" bootcamp in 2019 and solidify my knowledge with building web app, reading books and following Udemy tutorials.</p>
           </div>
           <div class="col-lg-5 mx-auto">
             <p><a href="https://github.com/davidbordeleau" target="_blank"><img src="img/profile_picture.jpg" alt="" class="img-fluid rounded-circle"></a></p>
@@ -57,28 +58,44 @@
         </div>
       </div>
     </section>
-    <section id="portfolio">
-      <div class="container">
-        <h2 class="heading">Portfolio</h2><br>
+
+              <section id="portfolio" class="gallery">
+      <div class="container clearfix">
         <div class="row">
-          <div class="col-sm-6 col-lg-6 col-md-6">
-            <p>Designed, implemented and shipped to production a clone of AirBnB for Books. <br>
-              Built with <strong>Ruby on Rails</strong>.
-            </p>
-            <a href="https://rails-bookable.herokuapp.com/" target="_blank"><img src="img/landing_page.png" alt="bookable" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-lg-6 col-md-6">
-            <p>Designed, implemented and shipped to production a search for best beauty products. <br>
-              Built with <strong>Ruby on Rails</strong>.
-            </p>
-            <a href="http://www.unclogd.com/" target="_blank"><img src="img/landing_page2.png" alt="Unclogd" class="img-fluid"></a>
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-md-12 col-lg-8">
+                <h2 class="heading">Portfolio</h2>
+                <p>Investigated, designed, and implemented infrastructure
+                    migration with ROR. Improved infrastructure transparency and
+                    agility of migrations. Used Pundit for security and refactored
+                    common code in all projects.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box"><a href="https://rails-bookable.herokuapp.com/" target="_blank"><img src="img/landing_page6.png" alt="bookable" class="img-fluid"></a>
+                A two sided market place for books made with ROR, SCSS and JavaScript</div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="http://www.unclogd.com/" target="_blank"><img src="img/landing_page5.png" alt="Unclogd" class="img-fluid"></a>
+                A beauty product finder web application made with ROR, SCSS and JavaScript</div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="https://github.com/davidbordeleau/Bitcoins-Currency-Converter" target="_blank"><img src="img/landing_page7.png" alt="Bitcoin converter" class="img-fluid"></a>
+                A Bitcoin currency converter made with Express, Node.js, JavaScript and Bitcoin API.
+                A solo side project to learn Express and practice Node.js</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+      </div>
+    </section>
     <div class="footer">
       <div class="footer-copyright">
-        This footer is made with love
+        &copy;2019 David Bordeleau
       </div>
     </div>
     <script src="index.js"></script>
