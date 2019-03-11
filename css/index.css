@@ -39,6 +39,10 @@ img:hover {
   cursor: pointer;
 }
 
+.description {
+  width: 60%;
+}
+
 .rounded-circle {
   width: 60%;
 }
@@ -92,44 +96,18 @@ img:hover {
   z-index: 10;
 }
 
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  padding-left: 10px;
+}
+
 .contact-form {
   margin-bottom: 40px;
 }
 
-p.social {
-  text-align: center;
-  margin-top: 20px;
-}
-
-p.social a:hover {
-  color: #595959;
-}
-
-p.social a {
-  margin: 0 10px 0 0;
-  color: #FFF;
-  display: inline-block;
-  width: 38px;
-  height: 38px;
-  border-radius: 19px;
-  line-height: 38px;
-  font-size: 15px;
-  text-align: center;
-  transition: all 0.3s;
-  vertical-align: bottom;
-}
-
-p.social a i {
-  vertical-align: bottom;
-  line-height: 38px;
-  font-size: 21px;
-}
-
-p.social a.linkedin,
-p.social a.github,
-p.social a.email {
-  background-color: #AAA;
-}
 
 #portfolio {
   background: #F7F7F7;
@@ -137,4 +115,10 @@ p.social a.email {
 
 #home p {
   font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .box {
+    padding-top: 35px;
+  }
 }
