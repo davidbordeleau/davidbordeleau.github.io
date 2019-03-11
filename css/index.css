@@ -39,6 +39,10 @@ img:hover {
   cursor: pointer;
 }
 
+.round {
+  border-radius: 2%;
+}
+
 .sticky {
   position: fixed;
   width: 100%;
