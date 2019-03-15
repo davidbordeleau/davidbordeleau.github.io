@@ -8,9 +8,9 @@ p.social a:hover {
 }
 
 p.social a {
-  margin: 0 10px 0 0;
+  margin: 20px;
   color: #FFF;
-  display: inline-block;
+  display: block;
   width: 38px;
   height: 38px;
   border-radius: 19px;
@@ -22,7 +22,6 @@ p.social a {
 }
 
 p.social a i {
-  vertical-align: bottom;
   line-height: 38px;
   font-size: 21px;
 }
@@ -36,7 +35,8 @@ p.social a.email {
 @media (max-width: 992px) {
   p.social {
   display: inline-flex;
-  line-height: 38px;
-  font-size: 21px;
+  }
+  p.social a:first-child {
+    margin-left: 0;
   }
 }
