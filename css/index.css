@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+p {
+  line-height: 1.6em;
+}
+
 nav {
   height: 45px;
 }
@@ -19,6 +23,7 @@ body {
 a {
   color: #333;
   text-decoration: none;
+  cursor: pointer;
 }
 
 section {
@@ -108,6 +113,41 @@ img:hover {
   margin-bottom: 40px;
 }
 
+.thumbnail {
+    width: 390px;
+    height: 310px;
+}
+
+.thumbnail2 {
+    width: 310px;
+    height: 230px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+     transform:scale(1.1);
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+
+.sub-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 #portfolio {
   background: #F7F7F7;
@@ -115,6 +155,11 @@ img:hover {
 
 #home p {
   font-style: italic;
+}
+
+#portfolio,
+#about {
+  min-height: 840px;
 }
 
 @media (max-width: 992px) {

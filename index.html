@@ -16,9 +16,9 @@
     <nav class="navbar navbar-expand-lg sticky">
       <div class="container">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="#home" class="nav-link link-scroll">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link link-scroll">About </a></li>
-          <li class="nav-item"><a href="#portfolio" class="nav-link link-scroll">Portfolio</a></li>
+          <li class="nav-item" id="button-home"><a>Home</a></li>
+          <li class="nav-item" id="button-about"><a>About</a></li>
+          <li class="nav-item" id="button-portfolio"><a>Portfolio</a></li>
         </ul>
       </div>
     </nav>
@@ -48,11 +48,18 @@
           <div class="col-lg-6 col-md-6">
             <h2 class="heading">About me</h2>
             <p>I'm a Web-Developer with a master's degree in music performance.</p>
-            <p>In music like in web-development the key is to be curious & patient. On my journey to web-development I quickly picked up complicated concepts like functions, class and arrays, which every good developer needs to understand before they can commit quality code to the world of agile development.</p>
-            <p>I worked on several <a href="#portfolio"><strong>projects</strong></a> and attended "Le Wagon" bootcamp in 2019. I solidify my knowledge everyday building web apps, reading books and following Udemy tutorials.</p>
+            <p>In music like in web-development the key is to be curious & always strive for excellence. On my journey to web-development I quickly picked up complicated concepts and learned to work efficiently with others. Since the last 2 years, I've been working fulltime for De Marque Inc. as a full stack developper.
+            With De Marque, I learned the importance of testing while working with different environnements on docker/kubernetes with our rails application.</p><p> I also improved code efficiency while building key features of our main application and I study everyday in my free time to get better at what I do.
+            I learned some key concepts of computer science and continue to go through books and tutorial to learn what I don't know.</p>
+            <p>My goal is to broaden my understanding everyday so I can continue to commit always better code to the world of agile development and be proud of the work I do.</p>
+            <p>I worked on several <a id="link-portfolio"><strong>projects</strong></a> and attended "Le Wagon" bootcamp in 2019.</p>
           </div>
           <div class="col-lg-6 col-md-6">
-            <p><a href="https://github.com/davidbordeleau" target="_blank"><img src="img/profile_picture.jpg" alt="" class="img-fluid rounded-circle"></a></p>
+            <div class="thumbnail">
+              <div class="image">
+                <a href="https://github.com/davidbordeleau" target="_blank"><img src="img/profile_picture.jpg" alt="" class="img-fluid rounded-circle"></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -72,17 +79,34 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="box"><a href="https://rails-bookable.herokuapp.com/" target="_blank"><img src="img/landing_page6.png" alt="bookable" class="img-fluid"></a>
-                A two sided market place for books made with ROR, SCSS and JavaScript</div>
+                <div class="thumbnail2">
+                  <div class="image">
+                    <div class="box">
+                      <a href="http://www.unclogd.com/" target="_blank"><img src="img/landing_page5.png" alt="Unclogd" class="img-fluid"></a>
+                      <div class="sub-text">A beauty product finder web application made with ROR, SCSS and JavaScript</div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-md-4">
-                <div class="box"><a href="http://www.unclogd.com/" target="_blank"><img src="img/landing_page5.png" alt="Unclogd" class="img-fluid"></a>
-                A beauty product finder web application made with ROR, SCSS and JavaScript</div>
+                <div class="thumbnail2">
+                  <div class="image">
+                    <div class="box">
+                      <a href="https://rails-bookable.herokuapp.com/" target="_blank"><img src="img/landing_page6.png" alt="bookable" class="img-fluid"></a>
+                      <div class="sub-text">A two sided market place for books made with ROR, SCSS and JavaScript</div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-md-4">
-                <div class="box"><a href="https://github.com/davidbordeleau/Bitcoins-Currency-Converter" target="_blank"><img src="img/landing_page7.png" alt="Bitcoin converter" class="img-fluid"></a>
-                A Bitcoin currency converter made with Express, Node.js, JavaScript and Bitcoin API.
-                A solo side project to learn Express and practice Node.js</div>
+                <div class="thumbnail2">
+                  <div class="image">
+                    <div class="box">
+                      <a href="https://github.com/davidbordeleau/Bitcoins-Currency-Converter" target="_blank"><img src="img/landing_page7.png" alt="Bitcoin converter" class="img-fluid"></a>
+                      <div class="sub-text">A Bitcoin currency converter made with Express, Node.js, JavaScript and Bitcoin API.s</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -95,4 +119,19 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    const buttonHome = document.getElementById("button-home");
+    const buttonAbout = document.getElementById("button-about");
+    const buttonPortfolio = document.getElementById("button-portfolio");
+    const linkPortfolio = document.getElementById("link-portfolio");
+
+    [linkPortfolio, buttonHome, buttonAbout, buttonPortfolio].forEach(item => {
+      item.addEventListener("click", function(){
+        goScroll(item.id.split('-')[1]);
+      });
+    });
+    goScroll = function(id){
+      document.getElementById(id).scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    }
+  </script>
 </html>
