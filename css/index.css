@@ -44,6 +44,13 @@ img:hover {
   cursor: pointer;
 }
 
+.project-img {
+  border-radius: 0.4rem;
+  outline:none;
+  border-color:#9ecaed;
+  box-shadow:0 0 10px #9ecaed;
+}
+
 .description {
   width: 60%;
 }
