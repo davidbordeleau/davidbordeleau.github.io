@@ -129,6 +129,7 @@ img:hover {
 .thumbnail2 {
     width: 310px;
     height: 230px;
+    margin-bottom: 80px;
 }
 
 .image {
@@ -163,6 +164,11 @@ img:hover {
 
 .link:hover {
   text-decoration: none;
+}
+
+.strong {
+  color: #565656;
+  font-weight: bold;
 }
 
 #portfolio {
